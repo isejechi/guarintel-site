@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Guarintel | Cross-Border Payments, Simplified</title>
+	<title>Guarintel | Personal &amp; Business Digital Security</title>
 
 	<meta
 		name="description"
-		content="Guarintel is developing a simple, transparent and secure way to send money across borders."
+		content="Guarintel develops security tools for individuals and businesses. Explore Digital Vault, in development, and our vision for Guarintel Defense."
 	>
 
 	<style>
@@ -36,6 +36,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 12px;
 		}
 
 		.logo {
@@ -68,7 +70,7 @@
 
 		h1 {
 			max-width: 850px;
-			font-size: clamp(48px, 7vw, 82px);
+			font-size: clamp(42px, 7vw, 82px);
 			line-height: 1.02;
 			letter-spacing: -3px;
 			margin-bottom: 28px;
@@ -160,7 +162,7 @@
 			margin: 0 auto;
 			padding: 28px 32px;
 			border-top: 1px solid #edf0f4;
-			color: #7a8599;
+			color: #536078;
 			font-size: 14px;
 			display: flex;
 			justify-content: space-between;
@@ -177,6 +179,11 @@
 		footer a:hover {
 			text-decoration: underline;
 		}
+
+		a:focus-visible { outline: 3px solid #2457c5; outline-offset: 5px; }
+		.skip-link { position: absolute; left: 16px; top: -100px; padding: 10px 16px; background: #fff; color: #2457c5; z-index: 10; }
+		.skip-link:focus { top: 12px; }
+		@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 		@media (max-width: 750px) {
 			header {
@@ -217,90 +224,51 @@
 </head>
 
 <body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
 	<header>
 		<div class="logo">Guarintel</div>
 		<div class="status">Currently in development</div>
 	</header>
 
-	<main>
+	<main id="main">
 
 		<section class="hero">
-			<div class="eyebrow">
-				Building the future of cross-border payments
-			</div>
-
-			<h1>Send money across borders with confidence.</h1>
-
-			<p class="intro">
-				Guarintel is developing a consumer-focused platform designed
-				to make international money transfers simpler, more transparent
-				and more accessible.
-			</p>
+			<div class="eyebrow">Personal &amp; business security</div>
+			<h1>Building a safer digital life.</h1>
+			<p class="intro">Guarintel develops security tools for individuals and businesses.
+				Our focus is helping people understand their digital exposure, recognize potential threats, and make informed security decisions.</p>
+			<p style="margin-top: 26px"><a href="#building-heading" style="color: #2457c5; font-weight: 600">Explore what we’re building &rarr;</a></p>
 		</section>
 
-		<section class="section">
-
+		<section class="section" aria-labelledby="building-heading">
 			<div class="section-label">WHAT WE'RE BUILDING</div>
-
-			<h2>
-				A better experience for international money transfers.
-			</h2>
-
-			<p class="section-intro">
-				Guarintel is being designed to give consumers a straightforward
-				way to understand and manage cross-border transfers while
-				working with regulated financial and payment infrastructure
-				partners.
-			</p>
-
+			<h2 id="building-heading">Start with a clearer picture.</h2>
+			<p class="section-intro">Our products are in development and are not publicly available.
+				This website shares our current focus and future direction.</p>
 			<div class="cards">
-
 				<div class="card">
-					<h3>Cross-border transfers</h3>
-					<p>
-						A simple digital experience for sending money
-						internationally.
-					</p>
+					<h3>Digital Vault</h3>
+					<p><strong>In development.</strong> A tool for discovering accounts and organizing information about digital exposure, so people can better understand their online footprint.</p>
 				</div>
-
 				<div class="card">
-					<h3>Transparent pricing</h3>
-					<p>
-						Clear information about applicable fees and exchange
-						rates before a transfer is confirmed.
-					</p>
+					<h3>Guarintel Defense</h3>
+					<p><strong>Development vision.</strong> Planned tools for monitoring connected channels, warning about possible scams, and supporting identity and exposure recovery.</p>
 				</div>
-
 				<div class="card">
-					<h3>Reliable payouts</h3>
-					<p>
-						Infrastructure designed to support secure delivery
-						through regulated payment partners and local payout
-						networks.
-					</p>
+					<h3>Security for businesses</h3>
+					<p><strong>Future direction.</strong> We plan to explore tools that help businesses understand security risks across their networks and servers.</p>
 				</div>
-
 			</div>
-
 		</section>
 
-		<section class="development">
-
+		<section class="development" aria-labelledby="development-heading">
 			<div class="development-box">
-
-				<h2>Currently in development</h2>
-
-				<p>
-					Guarintel is an early-stage fintech platform currently
-					under development. We are exploring partnerships with
-					regulated payment infrastructure providers to support
-					cross-border transfers, foreign exchange and local payout
-					capabilities.
-				</p>
-
+				<h2 id="development-heading">Developing carefully, step by step.</h2>
+				<p>Digital Vault is undergoing limited testing. Guarintel Defense's planned capabilities,
+					including automatic monitoring, depend on supported platforms, available integrations,
+					and user permissions. Features and availability may change as development progresses.</p>
 			</div>
-
 		</section>
 
 	</main>

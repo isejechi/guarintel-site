@@ -49,7 +49,7 @@
 		}
 
 		.updated {
-			color: #7a8599;
+			color: #536078;
 			margin-bottom: 48px;
 		}
 
@@ -76,9 +76,14 @@
 			margin: 0 auto;
 			padding: 28px 32px;
 			border-top: 1px solid #edf0f4;
-			color: #7a8599;
+			color: #536078;
 			font-size: 14px;
 		}
+
+		a:focus-visible { outline: 3px solid #2457c5; outline-offset: 5px; }
+		.skip-link { position: absolute; left: 16px; top: -100px; padding: 10px 16px; background: #fff; color: #2457c5; z-index: 10; }
+		.skip-link:focus { top: 12px; }
+		@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 		@media (max-width: 600px) {
 			header,
@@ -96,15 +101,16 @@
 </head>
 
 <body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
 	<header>
 		<a href="index.html">Guarintel</a>
 	</header>
 
-	<main>
+	<main id="main">
 
 		<h1>Terms of Use</h1>
-		<p class="updated">Last updated: October 6, 2026</p>
+		<p class="updated">Last updated: October 10, 2026</p>
 
 		<section>
 			<h2>About these terms</h2>
@@ -115,39 +121,26 @@
 			</p>
 
 			<p>
-				Guarintel is an early-stage fintech platform currently under
-				development. This website is currently provided for
+				Guarintel develops security tools for individuals and businesses.
+				Our products are currently in development. This website is currently provided for
 				informational purposes.
 			</p>
 		</section>
 
 		<section>
-			<h2>No money transfer services currently offered</h2>
-
-			<p>
-				Guarintel does not currently offer money transmission,
-				payment processing, foreign exchange, deposit, banking,
-				or other financial services through this website.
-			</p>
-
-			<p>
-				Information describing planned products, capabilities, or
-				services represents features currently being explored or
-				developed and should not be interpreted as an offer to
-				provide financial services.
-			</p>
+			<h2>Informational website</h2>
+			<p>This website describes security tools that Guarintel is developing or planning.
+				It does not currently provide account discovery, monitoring, scam warnings,
+				identity recovery, or business security services.</p>
 		</section>
 
 		<section>
 			<h2>Future availability</h2>
-
-			<p>
-				Any future Guarintel financial services may be subject to
-				additional agreements, eligibility requirements, identity
-				verification, compliance requirements, geographic
-				restrictions, regulatory approvals, and the involvement
-				of appropriately regulated financial or payment partners.
-			</p>
+			<p>Digital Vault is in development. Guarintel Defense and business security capabilities
+				are future plans. Descriptions of planned features are not a commitment to availability
+				or a release date. Capabilities will depend on supported platforms, integrations,
+				and user permissions. Product-specific terms will be provided as appropriate before
+				future services become available.</p>
 		</section>
 
 		<section>

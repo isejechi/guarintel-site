@@ -49,7 +49,7 @@
 		}
 
 		.updated {
-			color: #7a8599;
+			color: #536078;
 			margin-bottom: 48px;
 		}
 
@@ -76,9 +76,14 @@
 			margin: 0 auto;
 			padding: 28px 32px;
 			border-top: 1px solid #edf0f4;
-			color: #7a8599;
+			color: #536078;
 			font-size: 14px;
 		}
+
+		a:focus-visible { outline: 3px solid #2457c5; outline-offset: 5px; }
+		.skip-link { position: absolute; left: 16px; top: -100px; padding: 10px 16px; background: #fff; color: #2457c5; z-index: 10; }
+		.skip-link:focus { top: 12px; }
+		@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 		@media (max-width: 600px) {
 			header,
@@ -96,22 +101,23 @@
 </head>
 
 <body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
 	<header>
 		<a href="index.html">Guarintel</a>
 	</header>
 
-	<main>
+	<main id="main">
 
 		<h1>Privacy Policy</h1>
-		<p class="updated">Last updated: October 6, 2026</p>
+		<p class="updated">Last updated: October 10, 2026</p>
 
 		<section>
 			<h2>Our commitment to privacy</h2>
 
 			<p>
-				Guarintel is an early-stage fintech platform currently under
-				development. We are committed to protecting privacy and
+				Guarintel develops security tools for individuals and businesses.
+				Our products are currently in development. We are committed to protecting privacy and
 				handling personal information responsibly as we develop
 				our services.
 			</p>
@@ -122,14 +128,14 @@
 
 			<p>
 				This website currently provides general information about
-				Guarintel and does not currently provide money transfer
-				services through the website.
+				Guarintel. It does not currently provide security tools,
+				account discovery, or monitoring services through the website.
 			</p>
 
 			<p>
 				We do not currently ask visitors through this website to
-				create an account, provide financial information, or submit
-				payment information.
+				create an account, connect email or other accounts, or submit
+				personal information through a form.
 			</p>
 		</section>
 
@@ -149,10 +155,9 @@
 			<h2>Future services</h2>
 
 			<p>
-				As Guarintel develops its products and services, we may need
-				to collect additional information to provide those services,
-				comply with applicable laws, prevent fraud, verify identities,
-				and support financial transactions.
+				This policy describes the current informational website.
+				It does not describe data handling for Digital Vault, Guarintel
+				Defense, or other future products.
 			</p>
 
 			<p>
